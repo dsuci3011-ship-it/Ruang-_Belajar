@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Materi | RuangBelajar</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font dan CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg main-nav navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-mark">R</span> RuangBelajar
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false"
+        aria-label="Buka navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="materi.html">Materi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-sun btn-sm rounded-pill px-3"
+               href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bagian judul -->
+  <header class="page-hero page-hero-small">
+    <div class="container">
+      <a href="materi.html" class="back-link">
+        ← Kembali ke daftar materi
+      </a>
+
+      <p class="eyebrow mt-4" id="kategori">MATERI BELAJAR</p>
+      <h1 class="page-title" id="judul">
+        Tips Belajar <span>Efektif.</span>
+      </h1>
+      <p class="page-intro" id="deskripsi">
+        Pelajari berbagai cara belajar yang sederhana dan bermanfaat.
+      </p>
+    </div>
+  </header>
+
+  <!-- Isi materi yang berubah sesuai pilihan -->
+  <main class="section-pad">
+    <div class="container">
+      <div class="row justify-content-center g-5">
+
+        <article class="col-lg-8 article-content">
+          <div class="article-highlight">
+            <span class="highlight-icon">✦</span>
+            <div>
+              <strong>Inti Materi</strong>
+              <p class="mb-0" id="inti">
+                Pilih materi yang ingin kamu pelajari.
+              </p>
+            </div>
+          </div>
+
+          <div id="isiMateri">
+            <!-- Konten diisi oleh JavaScript -->
+          </div>
+
+          <div class="article-summary mt-4">
+            <p class="eyebrow">KESIMPULAN</p>
+            <h2 class="h3">Hal yang perlu diingat</h2>
+            <p id="kesimpulan" class="mb-0">
+              Belajarlah secara bertahap dan konsisten.
+            </p>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <a href="materi.html"
+               class="btn btn-primary rounded-pill px-4">
+              Pilih Materi Lain
+            </a>
+            <a href="index.html"
+               class="btn btn-outline-dark rounded-pill px-4">
+              Ke Beranda
+            </a>
+          </div>
+        </article>
+
+        <!-- Tips tambahan -->
+        <aside class="col-lg-3">
+          <div class="sidebar-card">
+            <p class="eyebrow">COBA HARI INI</p>
+            <h2 class="h5">Checklist Belajar</h2>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="cek1">
+              <label class="form-check-label" for="cek1">
+                Membaca materi
+              </label>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="cek2">
+              <label class="form-check-label" for="cek2">
+                Memahami poin penting
+              </label>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="cek3">
+              <label class="form-check-label" for="cek3">
+                Mencoba latihan
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="cek4">
+              <label class="form-check-label" for="cek4">
+                Mengulang pelajaran
+              </label>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row
+                justify-content-between align-items-center gap-2">
+      <a class="footer-brand" href="index.html">
+        RuangBelajar<span> ✦</span>
+      </a>
+      <p class="mb-0">
+        © 2026 RuangBelajar · Belajar dan berkembang bersama.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Data materi dan JavaScript -->
+  <script>
+    const materi = {
+      waktu: {
+        kategori: "MANAJEMEN WAKTU",
+        judul: "Tips Belajar Efektif",
+        deskripsi: "Pelajari cara mengatur waktu agar kegiatan belajar lebih terarah dan teratur.",
+        inti: "Tetapkan tujuan, buat jadwal, dan pelajari materi secara bertahap.",
+        bagian: [
+          {
+            judul: "1. Tentukan tujuan belajar",
+            isi: "Sebelum mulai belajar, tentukan hal yang ingin kamu pahami. Contohnya, membaca satu bab atau menyelesaikan beberapa latihan soal."
+          },
+          {
+            judul: "2. Buat jadwal yang realistis",
+            isi: "Susun waktu belajar sesuai kegiatan sehari-hari. Pilih jadwal yang memungkinkan untuk dilakukan secara konsisten."
+          },
+          {
+            judul: "3. Berikan waktu untuk istirahat",
+            isi: "Belajar dapat dibagi menjadi beberapa sesi dengan jeda istirahat. Sesuaikan durasinya dengan kebutuhan dan tingkat konsentrasi."
+          }
+        ],
+        kesimpulan: "Belajar efektif dimulai dengan tujuan yang jelas, jadwal yang sesuai, dan kebiasaan belajar yang konsisten."
+      },
+
+      catatan: {
+        kategori: "CATATAN BELAJAR",
+        judul: "Catatan yang Bermakna",
+        deskripsi: "Ketahui cara mencatat informasi penting agar materi lebih mudah dipahami.",
+        inti: "Catatan yang baik berisi inti informasi dengan bahasa yang mudah dipahami.",
+        bagian: [
+          {
+            judul: "1. Catat poin penting",
+            isi: "Tuliskan gagasan utama, istilah penting, rumus, atau contoh. Hindari menyalin semua kalimat jika tidak diperlukan."
+          },
+          {
+            judul: "2. Gunakan bahasa sendiri",
+            isi: "Coba jelaskan kembali materi menggunakan kalimatmu sendiri. Cara ini membantu memeriksa apakah kamu memahami isi pelajaran."
+          },
+          {
+            judul: "3. Susun catatan dengan rapi",
+            isi: "Gunakan judul, subjudul, daftar, atau peta konsep agar hubungan antaride lebih mudah dilihat."
+          }
+        ],
+        kesimpulan: "Catatan yang ringkas dan terstruktur membantu kamu mengulang pelajaran dengan lebih mudah."
+      },
+
+      konsisten: {
+        kategori: "KEBIASAAN POSITIF",
+        judul: "Belajar Konsisten",
+        deskripsi: "Bangun kebiasaan belajar sedikit demi sedikit agar lebih mudah dipertahankan.",
+        inti: "Konsistensi dibangun melalui kebiasaan sederhana yang dilakukan secara rutin.",
+        bagian: [
+          {
+            judul: "1. Mulai dari target kecil",
+            isi: "Pilih target yang mudah dilakukan, seperti membaca beberapa halaman atau mengulang satu topik setiap hari."
+          },
+          {
+            judul: "2. Tentukan waktu rutin",
+            isi: "Pilih waktu belajar yang sesuai dengan aktivitasmu. Rutinitas membantu kegiatan belajar menjadi bagian dari keseharian."
+          },
+          {
+            judul: "3. Pantau perkembangan",
+            isi: "Beri tanda pada materi yang sudah selesai dan catat hal yang masih perlu dipelajari. Evaluasi target jika terasa terlalu sulit."
+          }
+        ],
+        kesimpulan: "Kebiasaan belajar yang kecil tetapi rutin dapat membantu proses belajar menjadi lebih teratur."
+      },
+
+      fokus: {
+        kategori: "KONSENTRASI",
+        judul: "Mengurangi Gangguan",
+        deskripsi: "Ciptakan suasana belajar yang mendukung konsentrasi dan pemahaman.",
+        inti: "Lingkungan belajar yang rapi dan minim gangguan membantu kamu memusatkan perhatian.",
+        bagian: [
+          {
+            judul: "1. Siapkan tempat belajar",
+            isi: "Pilih tempat yang nyaman, cukup terang, dan memiliki ruang untuk buku atau perangkat yang dibutuhkan."
+          },
+          {
+            judul: "2. Kurangi gangguan digital",
+            isi: "Matikan notifikasi yang tidak diperlukan atau letakkan ponsel jauh dari jangkauan selama sesi belajar."
+          },
+          {
+            judul: "3. Fokus pada satu tugas",
+            isi: "Selesaikan satu bagian materi terlebih dahulu sebelum beralih ke tugas lainnya. Catat hal lain yang perlu dikerjakan nanti."
+          }
+        ],
+        kesimpulan: "Tempat yang nyaman, pengelolaan notifikasi, dan fokus pada satu tugas dapat mendukung konsentrasi."
+      },
+
+      istirahat: {
+        kategori: "KESEIMBANGAN BELAJAR",
+        judul: "Belajar dan Istirahat",
+        deskripsi: "Pahami pentingnya menyeimbangkan waktu belajar dengan kebutuhan istirahat.",
+        inti: "Belajar perlu disesuaikan dengan kondisi tubuh, konsentrasi, dan kegiatan sehari-hari.",
+        bagian: [
+          {
+            judul: "1. Gunakan sesi belajar",
+            isi: "Bagi materi menjadi beberapa sesi agar kamu dapat memusatkan perhatian pada satu bagian dalam satu waktu."
+          },
+          {
+            judul: "2. Ambil jeda seperlunya",
+            isi: "Saat mulai lelah atau sulit berkonsentrasi, berhentilah sejenak, bergerak ringan, atau minum air."
+          },
+          {
+            judul: "3. Jaga rutinitas harian",
+            isi: "Atur waktu belajar bersama waktu tidur, makan, aktivitas fisik, dan kegiatan lainnya agar lebih seimbang."
+          }
+        ],
+        kesimpulan: "Jadwal yang seimbang membantu kegiatan belajar menjadi lebih nyaman dan dapat dipertahankan."
+      },
+
+      evaluasi: {
+        kategori: "EVALUASI DIRI",
+        judul: "Periksa Pemahaman",
+        deskripsi: "Gunakan cara sederhana untuk mengetahui bagian materi yang sudah dipahami dan yang perlu diulang.",
+        inti: "Mengecek pemahaman membantu kamu mengetahui langkah belajar berikutnya.",
+        bagian: [
+          {
+            judul: "1. Jelaskan kembali materi",
+            isi: "Setelah membaca, tutup catatan dan coba jelaskan gagasan utama dengan bahasamu sendiri."
+          },
+          {
+            judul: "2. Kerjakan latihan",
+            isi: "Gunakan soal latihan atau pertanyaan sederhana untuk menguji pemahaman. Periksa jawaban dan pelajari kesalahan."
+          },
+          {
+            judul: "3. Catat bagian yang belum dipahami",
+            isi: "Tuliskan pertanyaan yang masih membingungkan. Cari penjelasan tambahan atau diskusikan dengan guru dan teman."
+          }
+        ],
+        kesimpulan: "Evaluasi diri membuat proses belajar lebih terarah karena kamu dapat menentukan materi yang perlu dipelajari kembali."
+      }
+    };
+
+    const parameter = new URLSearchParams(window.location.search);
+    const pilihan = parameter.get("materi") || "waktu";
+    const data = materi[pilihan] || materi.waktu;
+
+    document.title = data.judul + " | RuangBelajar";
+    document.getElementById("kategori").textContent = data.kategori;
+    document.getElementById("judul").textContent = data.judul;
+    document.getElementById("deskripsi").textContent = data.deskripsi;
+    document.getElementById("inti").textContent = data.inti;
+    document.getElementById("kesimpulan").textContent = data.kesimpulan;
+
+    const isiMateri = document.getElementById("isiMateri");
+
+    data.bagian.forEach(function(bagian) {
+      const subjudul = document.createElement("h2");
+      subjudul.textContent = bagian.judul;
+
+      const paragraf = document.createElement("p");
+      paragraf.textContent = bagian.isi;
+
+      isiMateri.appendChild(subjudul);
+      isiMateri.appendChild(paragraf);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>

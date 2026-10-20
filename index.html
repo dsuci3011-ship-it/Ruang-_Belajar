@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RuangBelajar | Beranda</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- CSS utama -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigasi -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-nav sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        Ruang<span>Belajar</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Buka navigasi"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="materi.html">Materi</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="detail.html?materi=waktu">
+              Detail Materi
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html">Tentang</a>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-light btn-sm rounded-pill px-3"
+               href="login.html">
+              Login
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Bagian utama -->
+    <header class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-copy">
+          <span class="eyebrow">
+            BELAJAR • BERKEMBANG • BERBAGI
+          </span>
+
+          <h1>
+            Temukan cara belajar yang
+            <em>lebih bermakna.</em>
+          </h1>
+
+          <p>
+            RuangBelajar menyajikan materi dan tips belajar
+            sederhana untuk membantu pelajar belajar dengan
+            lebih terarah.
+          </p>
+
+          <a class="btn btn-primary btn-lg rounded-pill px-4"
+             href="materi.html">
+            Jelajahi Materi →
+          </a>
+
+          <div class="hero-note">
+            <span>✓ Materi ringkas</span>
+            <span>✓ Mudah dipahami</span>
+            <span>✓ Bisa diakses kapan saja</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1100&q=85"
+            alt="Pelajar sedang belajar di meja"
+          >
+        </div>
+
+      </div>
+    </header>
+
+    <!-- Pilihan materi -->
+    <section class="container section-space">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">MULAI DARI SINI</span>
+          <h2>Belajar dengan langkah kecil</h2>
+          <p>Pilih topik yang sesuai dengan kebutuhanmu.</p>
+        </div>
+
+        <a href="materi.html" class="text-link">
+          Semua materi →
+        </a>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Materi 1 -->
+        <div class="col-md-4">
+          <article class="card topic-card h-100">
+
+            <div class="topic-icon icon-lavender">✎</div>
+
+            <div class="card-body">
+              <span class="topic-label">Strategi</span>
+
+              <h3 class="h5 mt-2">Tips Belajar Efektif</h3>
+
+              <p>
+                Atur waktu, buat target kecil, dan ulangi
+                materi secara berkala.
+              </p>
+
+              <a href="detail.html"
+                 class="text-link">
+                Pelajari topik →
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- Materi 2 -->
+        <div class="col-md-4">
+          <article class="card topic-card h-100">
+
+            <div class="topic-icon icon-mint">▤</div>
+
+            <div class="card-body">
+              <span class="topic-label">Materi</span>
+
+              <h3 class="h5 mt-2">Catatan yang Rapi</h3>
+
+              <p>
+                Susun ide utama supaya lebih mudah dibaca
+                dan diingat.
+              </p>
+
+              <a href="detail.html"
+                 class="text-link">
+                Pelajari topik →
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+        <!-- Materi 3 -->
+        <div class="col-md-4">
+          <article class="card topic-card h-100">
+
+            <div class="topic-icon icon-peach">◷</div>
+
+            <div class="card-body">
+              <span class="topic-label">Kebiasaan</span>
+
+              <h3 class="h5 mt-2">Mengelola Waktu</h3>
+
+              <p>
+                Seimbangkan waktu belajar, istirahat,
+                dan aktivitas harian.
+              </p>
+
+              <a href="detail.html"
+                 class="text-link">
+                Pelajari topik →
+              </a>
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Motivasi belajar -->
+    <section class="quote-band">
+      <div class="container">
+
+        <p class="quote-mark">“</p>
+
+        <h2>
+          Belajar bukan tentang siapa yang paling cepat,
+          tetapi siapa yang terus mencoba.
+        </h2>
+
+        <p class="mb-0">
+          Mulai dari satu hal kecil hari ini.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row
+                justify-content-between gap-2">
+
+      <span>© 2026 RuangBelajar</span>
+
+      <span>Teman belajar untuk hari yang lebih baik.</span>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+</body>
+</html>
